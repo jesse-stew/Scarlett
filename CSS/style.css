@@ -1,0 +1,106 @@
+/***base CSS, smaller screens***/
+
+
+/***header***/
+header {
+	background-color: #ED8595;
+	height: 50px;
+	margin-bottom: 25px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 1.5em;
+	padding: 10px 0;
+}
+
+header > p {
+	text-align: center;
+}
+
+/***images and captions***/
+section {
+	padding: 0 30px;
+}
+
+div {
+	margin-bottom: 80px;
+	margin-top: 40px;
+	height: 320px;
+	width: 320px;
+}
+
+img {
+	height: 100%;
+	width: auto;
+}
+
+div > p {
+	text-align: center;
+	font-family: sans-serif;
+	background-color: #ED8595;
+	padding: 10px 0;
+	color: white;
+	font-size: 1.1em;
+	width: auto;
+	margin-top: 10px;
+}
+
+
+/***CSS for medium sized devices, ≥768px***/
+@media (min-width: 768px) {
+
+/***header***/
+header > p {
+	padding-top: 10px;
+}
+
+/***images and captions***/
+ div {
+ 	display: inline-block;
+ 	width: 40%
+ }
+
+ div:nth-of-type(2n+1) {
+ 	margin-right: 15%;
+ }
+
+div > p {
+	width: 320px;
+}
+
+section {
+	margin: 0 auto;
+}
+
+}
+
+/*** CSS for large size devices, ≥992px***/
+
+@media (min-width: 992px) {
+
+/***images and captions***/
+div {
+	width: 30%;
+}
+
+ div:nth-of-type(2n+1) {
+ 	margin-right: 0;
+ }
+
+ div:nth-of-type(1n) {
+ 	margin-right: 3%;
+ }
+
+ div:nth-of-type(2n) {
+ 	margin-right: 3%;
+ }
+
+ section {
+ 	max-width: 1000px;
+ }
+
+
+
+
+
+
+}
