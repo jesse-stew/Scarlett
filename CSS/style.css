@@ -4,16 +4,15 @@
 /***header***/
 header {
 	background-color: #ED8595;
-	height: 50px;
 	margin-bottom: 25px;
 	font-family: sans-serif;
 	color: white;
 	font-size: 1.5em;
-	padding: 10px 0;
 }
 
 header > p {
 	text-align: center;
+	padding: 10px 0;
 }
 
 /***images and captions***/
@@ -24,13 +23,12 @@ section {
 div {
 	margin-bottom: 80px;
 	margin-top: 40px;
-	height: 320px;
-	width: 320px;
+	min-height: 320px;
+	max-width: 100%;
 }
 
 img {
-	height: 100%;
-	width: auto;
+	max-width: 100%;
 }
 
 div > p {
@@ -62,10 +60,6 @@ header > p {
  div:nth-of-type(2n+1) {
  	margin-right: 15%;
  }
-
-div > p {
-	width: 320px;
-}
 
 section {
 	margin: 0 auto;
