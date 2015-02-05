@@ -1,0 +1,94 @@
+/***base CSS, smaller screens***/
+
+$bg-color: #ED8595;
+$font-fam: Helvetica, sans-serif;
+
+
+/***header***/
+header {
+	background-color: $bg-color;
+	margin-bottom: 25px;
+	font-family: $font-fam;
+	color: white;
+	font-size: 1.5em;
+		p {
+		text-align: center;
+		padding: 10px 0;
+		}
+}
+
+/***images and captions***/
+section {
+	padding: 0 30px;
+		div {
+		margin-bottom: 80px;
+		margin-top: 40px;
+		min-height: 320px;
+		max-width: 100%;
+		}
+		img {
+		max-width: 100%;
+		}
+		p {
+		text-align: center;
+		font-family: $font-fam;
+		background-color: $bg-color;
+		padding: 10px 0;
+		color: white;
+		font-size: 1.1em;
+		width: auto;
+		margin-top: 10px;
+		}
+}
+
+
+
+
+/***CSS for medium sized devices, ≥768px***/
+@media (min-width: 768px) {
+
+/***header***/
+header p {
+	padding-top: 10px;
+}
+
+/***images and captions***/
+ section {
+	margin: 0 auto;
+		div {
+		 	width: 45%
+		 }
+		div:nth-of-type(odd) {
+		 	margin-right: 5%;
+		 	float: left;
+		 }
+
+		 div:nth-of-type(even) {
+		 	float: right;
+		 }
+ }
+
+}
+
+/*** CSS for large size devices, ≥992px***/
+
+@media (min-width: 992px) {
+
+ section {
+ 	max-width: 1000px;
+ 	padding: 0;
+		/***images and captions***/
+		div {
+			width: 30%;
+		}
+		div:nth-of-type(1), div:nth-of-type(2), div:nth-of-type(4), div:nth-of-type(5) {
+			float: left;
+			margin-right: 5%;
+		}
+		div:nth-of-type(3), div:nth-of-type(6) {
+			float: right;
+			margin-right: 0;
+		}
+}
+
+}
